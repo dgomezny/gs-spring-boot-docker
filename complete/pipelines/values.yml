@@ -10,6 +10,6 @@ GitHub:
 Shipa:
   intName: mjmckayShipa
 app:
-  dockerImageName: mjswampup2021.jfrog.io/swampup-docker-local/gs-spring-boot-docker:latest
+  dockerImageName: mjswampup2021.jfrog.io/swampup-docker-local/gs-spring-boot-docker
   dockerFileLocation: complete
   buildName: swampup-shipa-gs-spring-boot-docker
