@@ -64,6 +64,7 @@ pipelines:
         execution:
           onStart:
             - echo "Docker build started"
+            - cd complete
             - ./mvnw package
             - mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
           onSuccess:
