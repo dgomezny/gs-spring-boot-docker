@@ -1,7 +1,7 @@
 Artifactory:
   server: mjswampup2021.jfrog.io
   intName: swampupArtifactory
-  devRepo: default-docker-local
+  devRepo: default-docker-virtual
   prodRepo: default-docker-prod-local
 GitHub:
   path: mjmckay/gs-spring-boot-docker
