@@ -90,6 +90,7 @@ pipelines:
             - name: {{ .Values.Shipa.intName }}
           inputResources:
             - name: swampupShipaCodeRepo
+	    - name: swampup_image
           inputSteps:
             - name: app_promote
         execution:
@@ -98,5 +99,5 @@ pipelines:
             - curl -s https://storage.googleapis.com/shipa-client/install-cloud-cli.sh | bash
             - shipa target add shipa target.shipa.cloud --set-current
             - echo $int_{{ .Values.Shipa.intName }}_password | shipa login $int_{{ .Values.Shipa.intName }}_email
-            - shipa app deploy -a swampup -i {{ .Values.app.dockerImageName }}:${run_number} --port=8080
+            - shipa app deploy -a swampup -i $res_swampup_image_imageName:$res_swampup_image_imageTag --port=8080
 
