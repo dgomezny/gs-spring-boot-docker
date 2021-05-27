@@ -90,7 +90,7 @@ pipelines:
             - name: {{ .Values.Shipa.intName }}
             - name: {{ .Values.Artifactory.creds }}
           inputResources:
-            - name: awsEcsDockerComposeRepo
+            - name: swampupShipaCodeRepo
           inputSteps:
             - name: app_promote
         execution:
