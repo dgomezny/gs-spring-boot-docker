@@ -98,6 +98,6 @@ pipelines:
             - cd $res_swampupShipaCodeRepo_resourcePath
             - curl -s https://storage.googleapis.com/shipa-client/install-cloud-cli.sh | bash
             - shipa target add shipa target.shipa.cloud --set-current
-            - echo $int_{{ .Values.Shipa.intName }}_email | shipa login $int_{{ .Values.Shipa.intName }}_password
+            - echo $int_{{ .Values.Shipa.intName }}_password | shipa login $int_{{ .Values.Shipa.intName }}_email
             - shipa app deploy -a swampup -i {{ .Values.app.dockerImageName }} --port=8080
 
