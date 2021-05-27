@@ -90,7 +90,7 @@ pipelines:
             - name: {{ .Values.Shipa.intName }}
           inputResources:
             - name: swampupShipaCodeRepo
-	    - name: swampup_image
+            - name: swampup_image
           inputSteps:
             - name: app_promote
         execution:
