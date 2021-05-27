@@ -64,9 +64,6 @@ pipelines:
         execution:
           onStart:
             - echo "Docker build started"
-#            - cd complete
-#            - ./mvnw package
-#            - mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
           onSuccess:
             - echo "Congrats - the Docker image was built!"
       - name: app_docker_push
