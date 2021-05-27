@@ -1,16 +1,15 @@
 Artifactory:
   server: mjswampup2021.jfrog.io
   intName: swampupArtifactory
-  devRepo: swampup-docker-local
-  prodRepo: swampup-docker-prod-local
-  creds: awsEcsDockerComposePullSecrets
+  devRepo: default-docker-local
+  prodRepo: default-docker-prod-local
 GitHub:
   path: mjmckay/gs-spring-boot-docker
   gitProvider: swampupConfig
 Shipa:
   intName: mjmckayShipa
 app:
-  dockerImageName: mjswampup2021.jfrog.io/swampup-docker-local/gs-spring-boot-docker
+  dockerImageName: mjswampup2021.jfrog.io/default-docker-virtual/gs-spring-boot-docker
   dockerFileLocation: complete
   dockerFileName: Dockerfile.multi
   buildName: swampup-shipa-gs-spring-boot-docker
