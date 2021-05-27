@@ -12,5 +12,5 @@ Shipa:
 app:
   dockerImageName: mjswampup2021.jfrog.io/swampup-docker-local/gs-spring-boot-docker
   dockerFileLocation: complete
-  dockerFileName: pipelines/Dockerfile
+  dockerFileName: Dockerfile.multi
   buildName: swampup-shipa-gs-spring-boot-docker

@@ -33,22 +33,6 @@ resources:
 pipelines:
   - name: swampup_shipa_build_and_deploy
     steps:
-#      - name: app_mvnw_build
-#        type: MvnBuild
-#        configuration:
-#          integrations:
-#            - name: {{ .Values.Artifactory.intName }}
-#          inputResources:
-#            - name: swampupShipaCodeRepo
-#          outputResources:
-#            - name: mvn_build_info
-#          sourceLocation: complete
-#        execution:
-#          onStart:
-#            - echo "Beginning Maven build"
-#          onSuccess:
-#            - echo "Prepping files"
-#            - mkdir -p target/dependency && (cd target/dependency; jar -xf ../*.jar)
       - name: app_docker_build
         type: DockerBuild
         configuration:
