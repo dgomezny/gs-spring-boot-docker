@@ -88,7 +88,6 @@ pipelines:
         configuration:
           integrations:
             - name: {{ .Values.Shipa.intName }}
-            - name: {{ .Values.Artifactory.creds }}
           inputResources:
             - name: swampupShipaCodeRepo
           inputSteps:
