@@ -60,7 +60,7 @@ pipelines:
           integrations:
             - name:  {{ .Values.Artifactory.intName }}
           inputSteps:
-            - name: swampup_docker_build
+            - name: app_docker_build
           outputResources:
             - name: swampup_image
             - name: swampup_build_info
