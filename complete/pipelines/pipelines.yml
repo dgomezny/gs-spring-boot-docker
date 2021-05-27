@@ -82,7 +82,7 @@ pipelines:
           inputResources:
             - name: swampup_build_info
           outputResources:
-            - name: promoted_app_build_info
+            - name: promoted_swampup_build_info
       - name: shipa_deploy
         type: Bash
         configuration:
